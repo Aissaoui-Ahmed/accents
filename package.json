@@ -13,5 +13,15 @@
   ],
   "author": "Aissaoui Ahmed <algarabi05@gmail.com>",
   "license": "MIT",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aissaoui-Ahmed/accents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aissaoui-Ahmed/accents/issues"
+  },
+  "homepage": "https://github.com/Aissaoui-Ahmed/accents#readme"
 }
