@@ -1,0 +1,17 @@
+{
+  "name": "accent",
+  "version": "1.0.0",
+  "description": "check and Remove accents!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "accents",
+    "remove",
+    "check"
+  ],
+  "author": "Aissaoui Ahmed <algarabi05@gmail.com>",
+  "license": "MIT",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+}
