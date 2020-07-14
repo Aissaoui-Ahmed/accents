@@ -1,6 +1,6 @@
 {
   "name": "@aissaoui-ahmed/accents",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "check and Remove accents!",
   "main": "index.js",
   "bin": {
