@@ -1,4 +1,4 @@
-#!/usr/bin/env -S node --experimental-json-modules --no-warnings
+#!/usr/bin/env node --experimental-json-modules --no-warnings
 
 import yargs from 'yargs';
 import { remove, check } from '../src/index.js';
