@@ -13,9 +13,9 @@ const check = async (string) => {
   string.split('');
   const result = {};
   for (let i = 0; i < string.length; i += 1) {
-    const letter = string[i];
+    const letter = string[i].charCodeAt().toString();
     if (letters[letter]) {
-      result.letter = letter;
+      result.letter = String.fromCharCode(letter);
       result.position = i;
       console.log(result);
     }
