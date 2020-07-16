@@ -2,9 +2,10 @@
   "name": "@aissaoui-ahmed/accents",
   "version": "1.0.2-alpha",
   "description": "check and Remove accents!",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ."
   },
   "keywords": [
     "accents",
@@ -23,5 +24,13 @@
   "bugs": {
     "url": "https://github.com/Aissaoui-Ahmed/accents/issues"
   },
-  "homepage": "https://github.com/Aissaoui-Ahmed/accents#readme"
+  "homepage": "https://github.com/Aissaoui-Ahmed/accents#readme",
+  "dependencies": {
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
 }
