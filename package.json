@@ -1,7 +1,7 @@
 {
   "name": "@aissaoui-ahmed/accents",
   "version": "1.0.3-alpha",
-  "description": "check and Remove accents!",
+  "description": "Check or remove accents from a string use CLI or function, Support multi languages.",
   "type": "module",
   "bin": {
     "accent": "./bin/accents.js"
