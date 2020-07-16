@@ -1,8 +1,11 @@
 {
   "name": "@aissaoui-ahmed/accents",
-  "version": "1.0.2-alpha",
+  "version": "1.0.3-alpha",
   "description": "check and Remove accents!",
   "type": "module",
+  "bin": {
+    "accent": "./bin/accents.js"
+  },
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
