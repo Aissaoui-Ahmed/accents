@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import letters from '../letters.js';
 
 /**
@@ -9,7 +8,11 @@ import letters from '../letters.js';
  * @description Remove accent on string.
  */
 const remove = async (string) => {
-  const result = string.replace(/[^A-Za-z0-9\[\] ]/g, (x) => letters[x] || x);
+  string.split('');
+  let result = '';
+  for (let i = 0; i < string.length; i += 1) {
+    result += letters[string[i].charCodeAt().toString()] || string[i];
+  }
   console.log(result);
 };
 
