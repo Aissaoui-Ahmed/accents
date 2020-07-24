@@ -1,13 +1,14 @@
 {
   "name": "@aissaoui-ahmed/accents",
-  "version": "1.0.4",
+  "version": "1.0.5-0",
   "description": "Check or remove accents from a string use CLI or function, Support multi languages.",
   "type": "module",
   "bin": {
     "accent": "./bin/accents.js"
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "prepublish": "./node_modules/.bin/babel src -d lib",
     "lint": "eslint ."
   },
   "keywords": [
@@ -32,8 +33,16 @@
     "yargs": "^15.4.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }
