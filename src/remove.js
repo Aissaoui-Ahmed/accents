@@ -7,13 +7,14 @@ import letters from '../letters.js';
  * @returns {String} string.
  * @description Remove accent on string.
  */
-const remove = async (string) => {
-  string.split('');
+const remove = (string) => {
+  const letter = string.split('');
   let result = '';
-  for (let i = 0; i < string.length; i += 1) {
-    result += letters[string[i].charCodeAt().toString()] || string[i];
+  for (let i = 0; i < letter.length; i += 1) {
+    result += letters[letter[i].charCodeAt().toString()] || letter[i];
   }
   console.log(result);
+  return result;
 };
 
 export default remove;
