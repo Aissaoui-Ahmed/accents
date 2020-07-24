@@ -1,10 +1,10 @@
 #!/usr/bin/env node --experimental-json-modules --no-warnings
 
 import yargs from 'yargs';
-import { remove, check } from '../src/index.js';
+import { remove, check, hasAccent } from '../src/index.js';
 
 const cli = yargs
-  .usage('\nRemove or check accents on string any language\n\nUsage: --remove [String] || --check [String]')
+  .usage('\nRemove or check accents on string any language\n\nUsage: --remove [String] || --check [String] || --hasAccent [String]')
   .option('h', {
     alias: 'help',
     describe: 'Show help',
@@ -19,7 +19,13 @@ const cli = yargs
     desc: 'Remove accents on string',
     type: 'string',
   })
+  .option('has', {
+    alias: 'hasAccent',
+    desc: 'if has string accents',
+    type: 'string',
+  })
   .argv;
 
-remove(cli.r);
-check(cli.c);
+if (typeof cli.r !== 'undefined') remove(cli.r);
+if (typeof cli.c !== 'undefined') check(cli.c);
+if (typeof cli.has !== 'undefined') hasAccent(cli.has);
