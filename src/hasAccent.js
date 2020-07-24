@@ -1,4 +1,4 @@
-import letters from '../letters.js';
+import letters from '../letters.json';
 
 /**
  *

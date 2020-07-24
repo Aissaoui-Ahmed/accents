@@ -1,6 +1,6 @@
 import check from './check.js';
 import remove from './remove.js';
-import hasAccent from './has_accent.js';
+import hasAccent from './hasAccent.js';
 
 export {
   check,
